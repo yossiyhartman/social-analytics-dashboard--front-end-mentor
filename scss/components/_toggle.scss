@@ -1,0 +1,53 @@
+@use '../abstracts/variables';
+
+.c-toggle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__text {
+		margin-right: 15px;
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+
+	&__slider {
+		appearance: none;
+		outline: none;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		width: $toggle-width;
+		height: $toggle-height;
+		background: $toggle-bg-color;
+		border-radius: 50px;
+
+		transition: {
+			property: background-color;
+			duration: .25s;
+			timing-function: ease-in-out;
+		}
+
+		&::before {
+			content: "";
+			width: $toggle-ball;
+			height: $toggle-ball;
+			background: white;
+			border-radius: 50%;
+			margin-left: calc((#{$toggle-height} - #{$toggle-ball}) / 2);
+			transition: {
+				property: transform, background-color;
+				duration: .25s;
+				timing-function: ease-in-out;
+			}
+		}
+
+		&:checked {
+			background: $toggle-bg-dark-color;
+
+			&::before {
+				transform: translateX(calc(#{$toggle-width} - #{$toggle-ball} - #{$toggle-padding * 2}));
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@use '../abstracts/variables';
+
+h1,
+h2 {
+	font-size: 2rem;
+	color: $light-theme-dark-text;
+}
+
+p {
+	font-size: 14px;
+	color: $light-theme-text;
+}
+
+label {
+	color: $light-theme-text;
+}

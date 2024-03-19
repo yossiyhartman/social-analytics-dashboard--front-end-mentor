@@ -1,0 +1,98 @@
+@use '../abstracts/variables';
+
+.c-followers-card {
+	position: relative;
+	padding: 10%;
+	text-align: center;
+	background-color: $light-theme-card-bg;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: background-color 0.25s ease;
+
+	&:hover {
+		background-color: darken($light-theme-card-bg, $amount: 4%);
+	}
+
+	&__border {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 5px;
+		width: 100%;
+
+		&--facebook {
+			background: $color-facebook;
+		}
+
+		&--twitter {
+			background: $color-twitter;
+		}
+
+		&--instagram {
+			background: $color-instagram;
+		}
+
+		&--youtube {
+			background: $color-youTube;
+		}
+	}
+
+	&__social-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__icon {
+		padding-right: 10px;
+		height: 20px;
+	}
+
+	&__username {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	&__count {
+		font-size: 6rem;
+		margin-top: 0.3em;
+	}
+
+	&__description {
+		font-size: 1.1rem;
+		font-weight: 200;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+	}
+
+	&__progress {
+		position: relative;
+		display: inline-flex;
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-top: 2em;
+
+		&--increase {
+			color: $color-increase;
+
+			&::before {
+				content: url('/app/images/icon-up.svg');
+				display: block;
+				padding-right: 5px;
+				transform: translateY(-2px);
+			}
+		}
+
+		&--decrease {
+			color: $color-decrease;
+
+			&::before {
+				content: url('/app/images/icon-down.svg');
+				display: block;
+				padding-right: 5px;
+				transform: translateY(-2px);
+			}
+		}
+	}
+}

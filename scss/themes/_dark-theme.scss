@@ -1,0 +1,65 @@
+@use "../abstracts/variables";
+
+.theme {
+	&--dark {
+		background-color: $dark-theme-bg-pattern;
+
+		.l-overview {
+			&__heading {
+				color: $dark-theme-light-text;
+			}
+		}
+
+		.c-page-title {
+			&__title {
+				color: $dark-theme-light-text;
+			}
+
+			&__followers {
+				color: $dark-theme-text;
+			}
+		}
+
+		.c-toggle {
+			&__text {
+				color: $dark-theme-text;
+			}
+		}
+
+		.c-followers-card {
+			background-color: $dark-theme-card-bg;
+
+			&:hover {
+				background-color: lighten($dark-theme-card-bg, 3%);
+			}
+
+			&__username {
+				color: $dark-theme-text;
+			}
+
+			&__description {
+				color: $dark-theme-text;
+			}
+
+			&__count {
+				color: $dark-theme-light-text;
+			}
+		}
+
+		.c-progress-card {
+			background-color: $dark-theme-card-bg;
+
+			&:hover {
+				background-color: lighten($dark-theme-card-bg, 3%);
+			}
+
+			&__title {
+				color: $dark-theme-text;
+			}
+
+			&__count {
+				color: $dark-theme-light-text;
+			}
+		}
+	}
+}

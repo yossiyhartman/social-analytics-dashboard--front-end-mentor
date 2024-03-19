@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Social Media Dashboard</title>
+</head>
+
+<body class="theme">
+
+    <div class="l-wrapper">
+
+
+        <header class="l-header">
+
+            <div class="c-page-title">
+                <h1 class="c-page-title__title">Social Media Dashboard</h1>
+                <p class="c-page-title__followers">Total Followers: 23,004</p>
+            </div>
+
+            <div class="c-toggle">
+                <label class="c-toggle__text" for="slider">Dark Mode </label>
+                <input class="c-toggle__slider" type="checkbox" name="slider" onclick="toggleDarkTheme()">
+            </div>
+
+        </header>
+
+        <div class="l-headline">
+            <div class="l-headline__item">
+
+                <div class="c-followers-card">
+                    <div class="c-followers-card__border c-followers-card__border--facebook"></div>
+                    <div class="c-followers-card__social-box">
+                        <img class="c-followers-card__icon" src="images/icon-facebook.svg" alt="Facebook icon">
+                        <p class="c-followers-card__username">@YYHartman</p>
+                    </div>
+                    <h1 class="c-followers-card__count">1987</h1>
+                    <p class="c-followers-card__description">Followers</p>
+                    <p class="c-followers-card__progress c-followers-card__progress--increase">12 Today</p>
+                </div>
+
+            </div>
+
+            <div class="l-headline__item">
+
+                <div class="c-followers-card">
+                    <div class="c-followers-card__border c-followers-card__border--twitter"></div>
+                    <div class="c-followers-card__social-box">
+                        <img class="c-followers-card__icon" src="images/icon-twitter.svg" alt="Twitter icon">
+                        <p class="c-followers-card__username">@YYHartman</p>
+                    </div>
+                    <h1 class="c-followers-card__count">1044</h1>
+                    <p class="c-followers-card__description">Followers</p>
+                    <p class="c-followers-card__progress c-followers-card__progress--increase">99 Today</p>
+                </div>
+
+            </div>
+
+            <div class="l-headline__item">
+
+                <div class="c-followers-card">
+                    <div class="c-followers-card__border c-followers-card__border--instagram"></div>
+                    <div class="c-followers-card__social-box">
+                        <img class="c-followers-card__icon" src="images/icon-instagram.svg" alt="Instagram icon">
+                        <p class="c-followers-card__username">@YYHartman</p>
+                    </div>
+                    <h1 class="c-followers-card__count">11K</h1>
+                    <p class="c-followers-card__description">Followers</p>
+                    <p class="c-followers-card__progress c-followers-card__progress--increase">1099 Today</p>
+                </div>
+
+            </div>
+
+            <div class="l-headline__item">
+
+                <div class="c-followers-card ">
+                    <div class="c-followers-card__border c-followers-card__border--youtube"></div>
+                    <div class="c-followers-card__social-box">
+                        <img class="c-followers-card__icon" src="images/icon-youtube.svg" alt="Youtube icon">
+                        <p class="c-followers-card__username">@YYHartman</p>
+                    </div>
+                    <h1 class="c-followers-card__count">8239</h1>
+                    <p class="c-followers-card__description">Subscribers</p>
+                    <p class="c-followers-card__progress c-followers-card__progress--decrease">1099 Today</p>
+                </div>
+
+            </div>
+        </div> <!-- headline -->
+
+
+        <div class="l-overview">
+            <h2 class="l-overview__heading">Overview - Today</h2>
+            <div class="l-overview__content">
+                <div class="c-progress-card">
+                    <p class="c-progress-card__title">Page Views</p>
+                    <img class="c-progress-card__icon" src="images/icon-facebook.svg">
+                    <h1 class="c-progress-card__count">87</h1>
+                    <p class="c-progress-card__progress c-progress-card__progress--increase">3%</p>
+                </div>
+                <div class="c-progress-card">
+                    <p class="c-progress-card__title">Likes</p>
+                    <img class="c-progress-card__icon" src="images/icon-facebook.svg">
+                    <h1 class="c-progress-card__count">52</h1>
+                    <p class="c-progress-card__progress c-progress-card__progress--decrease">2%</p>
+                </div>
+                <div class="c-progress-card">
+                    <p class="c-progress-card__title">Profile views</p>
+                    <img class="c-progress-card__icon" src="images/icon-instagram.svg">
+                    <h1 class="c-progress-card__count">53k</h1>
+                    <p class="c-progress-card__progress c-progress-card__progress--increase">1375%</p>
+                </div>
+                <div class="c-progress-card">
+                    <p class="c-progress-card__title">Likes</p>
+                    <img class="c-progress-card__icon" src="images/icon-instagram.svg">
+                    <h1 class="c-progress-card__count">5462</h1>
+                    <p class="c-progress-card__progress c-progress-card__progress--increase">2257%</p>
+                </div>
+                <div class="c-progress-card">
+                    <p class="c-progress-card__title">Retweets</p>
+                    <img class="c-progress-card__icon" src="images/icon-twitter.svg">
+                    <h1 class="c-progress-card__count">117</h1>
+                    <p class="c-progress-card__progress c-progress-card__progress--increase">303%</p>
+                </div>
+                <div class="c-progress-card">
+                    <p class="c-progress-card__title">Likes</p>
+                    <img class="c-progress-card__icon" src="images/icon-twitter.svg">
+                    <h1 class="c-progress-card__count">507</h1>
+                    <p class="c-progress-card__progress c-progress-card__progress--decrease">553%</p>
+                </div>
+                <div class="c-progress-card">
+                    <p class="c-progress-card__title">Total Views</p>
+                    <img class="c-progress-card__icon" src="images/icon-youtube.svg">
+                    <h1 class="c-progress-card__count">1407</h1>
+                    <p class="c-progress-card__progress c-progress-card__progress--decrease">12%</p>
+                </div>
+                <div class="c-progress-card">
+                    <p class="c-progress-card__title">Likes</p>
+                    <img class="c-progress-card__icon" src="images/icon-youtube.svg">
+                    <h1 class="c-progress-card__count">107</h1>
+                    <p class="c-progress-card__progress c-progress-card__progress--decrease">19%</p>
+                </div>
+
+            </div>
+        </div> <!-- overview -->
+
+
+    </div> <!-- wrapper -->
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

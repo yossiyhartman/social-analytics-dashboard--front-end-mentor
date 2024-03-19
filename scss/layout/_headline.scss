@@ -1,0 +1,25 @@
+.l-headline {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: minmax(auto, 500px);
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+
+	&__item {
+		min-width: 200px;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 776px) {
+	.l-headline {
+		grid-template: 1fr 1fr / 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.l-headline {
+		grid-template: 1fr / repeat(4, 1fr);
+	}
+}
